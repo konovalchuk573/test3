@@ -1,0 +1,35 @@
+.simple_list {
+	position: relative;
+	max-width: 350px;
+}
+.simple_list ul {
+	padding-left: 25px;
+	margin: 25px 0;
+}
+.simple_list img {
+	max-height: 150px;
+}
+.simple_list li a {
+	color: #1e87f0;
+	text-decoration: underline;
+}
+.simple_list li a:hover {
+	text-decoration: none;
+}
+.simple_list:after {
+	content: attr(class);
+	visibility: hidden;
+	background-color: #000;
+	color: #fff;
+	text-align: center;
+	border-radius: 7px;
+	padding: 5px 15px;
+	position: absolute;
+	top: -55px;
+	left: 0;
+	transition: top 0.3s;
+}
+.simple_list:hover:after {
+	visibility: visible;
+	top: -50px;
+}
